@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Oficiální web fitness influencera – Nattypony" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Influencer – Nattypony</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-pO6C7YVbTZ5o3H+cvA9pP6nV8nBvncRcwJcmDffUqTJHJW5iYx7qMqrKrqfFt8NqvAcT8R4K1T+u6DqYk6+4eA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Hlavní navigace -->
+<header>
+    <div class="logo">Nattypony</div>
+    <nav id="mainNav">
+        <ul>
+            <li><a href="#o-mne">O mně</a></li>
+            <li><a href="#videa">YouTube</a></li>
+            <li><a href="#sponsor">Sponzoring</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<!-- Hero sekce / Úvodní banner (full width) -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Vítejte na oficiálním webu Nattypony</h1>
+        <p>Fyzioterapeut, fitness nadšenec a autor vzdělávacích videí o anatomii a pohybu.</p>
+        <a href="#o-mne" class="btn">Více informací</a>
+    </div>
+</section>
+
+<!-- Sociální média sekce -->
+<section class="social-media">
+    <p class="social-heading">Sledujte mě:</p>
+    <div class="social-icons">
+        <a href="https://herohero.co/nattypony4" target="_blank" aria-label="HeroHero" class="herohero">
+            <img
+                    alt="Herohero"
+                    title="Herohero"
+                    class="herohero-icon"
+                    src="https://assets.herohero.co/prod/images/user/infoheroherokamniiih/1661459377083.jpeg?width=96"
+                    srcset="https://assets.herohero.co/prod/images/user/infoheroherokamniiih/1661459377083.jpeg?width=96 1x, https://assets.herohero.co/prod/images/user/infoheroherokamniiih/1661459377083.jpeg?width=192 2x"
+                    width="48"
+                    height="48"
+                    decoding="sync"
+            >
+        </a>
+        <a href="https://www.instagram.com/jakubstepanek4/" target="_blank" aria-label="Instagram" class="instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@nattypony4" target="_blank" aria-label="TikTok" class="tiktok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.youtube.com/@nattypony4" target="_blank" aria-label="YouTube" class="youtube">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Sekce "O mně" -->
+<section id="o-mne" class="about">
+    <h2>O mně</h2>
+    <p>
+        Jsem vystudovaný fyzioterapeut a vášnivý gymrat. Před tím, než jsem se rozhodl studovat fyzioterapii, jsem se věnoval grafickému designu, což mi pomohlo rozvinout kreativní přístup a estetické cítění.
+    </p>
+    <p>
+        V roce 2021 jsem začal natáčet na YouTube, kde sdílím své znalosti, zkušenosti a tipy v oblasti fitness, tréninku a zdravého životního stylu. Můj kanál je místem, kde se můžete inspirovat a dozvědět se, jak efektivně cvičit a žít aktivně.
+    </p>
+    <p>
+        Navázal jsem spolupráci se značkou Swaglift – mým jediným sponzorem, se kterým jsem absolvoval například trip do Ameriky, kde jsem měl příležitost setkat se s inspirativními osobnostmi, jako jsou Larry Wheels a Leonidas. Díky těmto zkušenostem vám mohu předávat nejen odborné rady, ale i motivaci a příběhy, které vás posunou vpřed.
+    </p>
+</section>
+
+<!-- Sekce "YouTube" -->
+<section id="videa" class="videos">
+    <h2>YouTube</h2>
+    <div class="video-row">
+        <div class="video-column">
+            <h3>nejnovější</h3>
+            <iframe
+                    width="300"
+                    height="169"
+                    src="https://www.youtube.com/embed/VC6q6tj4oL8"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen
+            ></iframe>
+        </div>
+        <div class="video-column">
+            <h3>nejpopulárnější</h3>
+            <iframe
+                    width="300"
+                    height="169"
+                    src="https://www.youtube.com/embed/miPIjgbw5CY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen
+            ></iframe>
+        </div>
+        <div class="video-column">
+            <h3>jak cvičit</h3>
+            <iframe
+                    width="300"
+                    height="169"
+                    src="https://www.youtube.com/embed/ohtM7Qc-J20?list=PLS3hyePhiJ764YwUIXTIeofmmi_ZNaX09"
+                    title="YouTube playlist"
+                    frameborder="0"
+                    allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+    <p>
+        Více videí najdete na mém <a href="https://www.youtube.com/@nattypony/videos" target="_blank">YouTube kanálu</a>.
+    </p>
+</section>
+
+<!-- Sponsor and Contact Sections Wrapped in a Container -->
+<div class="info-container">
+    <!-- Sekce "Sponzoring" -->
+    <section id="sponsor" class="sponsor">
+        <h2>Sponzoring</h2>
+        <p>
+            SWAGLIFT je značka fitness suplementů a oblečení. Použijte kód <strong>Pony</strong> pro slevu. Více na
+            <a href="https://swaglift.com" target="_blank">swaglift.com</a>.
+        </p>
+    </section>
+
+    <!-- Sekce "Kontakt" -->
+    <section id="kontakt" class="contact">
+        <h2>Kontakt</h2>
+        <p>
+            Pro obchodní spolupráci nebo individuální dotazy mi napište na e-mail:
+            <a href="mailto:info@nattypony.cz">info@nattypony.cz</a>
+        </p>
+    </section>
+</div>
+
+<!-- Patička -->
+<footer>
+    <p>&copy; 2025 Nattypony – Všechna práva vyhrazena.</p>
+</footer>
+
+<!-- Vlastní JavaScript -->
+<script src="main.js"></script>
+</body>
+</html>

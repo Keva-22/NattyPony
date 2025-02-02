@@ -1,0 +1,412 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header and Navigation (full width) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 1em 2em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5a00;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* Hero Section (full width background) */
+.hero {
+    background: url("https://via.placeholder.com/1920x600") center/cover no-repeat;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-text {
+    position: relative;
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+.hero-text p {
+    color: #ddd;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+.btn {
+    background-color: #ff5a00;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff7733;
+}
+
+/* Container-style for sections (80% width, centered, with padding and margin) */
+.about,
+.videos,
+.sponsor,
+.contact,
+.social-media {
+    width: 80%;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Social Media Section */
+.social-heading {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.social-icons a {
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-media a.herohero img.herohero-icon {
+    vertical-align: middle;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.social-media a.instagram {
+    color: #E4405F;
+    font-size: 1.8em;
+}
+
+.social-media a.tiktok {
+    color: #010101;
+    font-size: 1.8em;
+}
+
+.social-media a.youtube {
+    color: #FF0000;
+    font-size: 1.8em;
+}
+
+/* About Section */
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #333;
+}
+
+.about p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+/* YouTube (Videos) Section */
+.videos h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #333;
+}
+
+.video-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.video-column {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.video-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+/* Sponsor Section */
+.sponsor h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.sponsor p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.sponsor a {
+    color: #ff5a00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sponsor a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section (distinct styling) */
+.contact {
+    background-color: #000;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.contact p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.contact a {
+    color: #ff5a00;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer (full width) */
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #111;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 50%;
+        padding: 1em;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-text p {
+        font-size: 0.9em;
+    }
+
+    .video-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Existing container-style for sections */
+.about,
+.videos,
+.social-media {
+    width: 80%;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* New Info Container for Sponsor and Contact */
+.info-container {
+    width: 80%;
+    margin: 2em auto;
+    display: block;
+}
+
+.info-container > section {
+    width: 100%;
+    margin: 0;
+}
+
+/* On screens 768px and wider, display sponsor and contact side-by-side */
+@media (min-width: 768px) {
+    .info-container {
+        display: flex;
+        gap: 2em;
+    }
+    .info-container > section {
+        width: 50%;
+    }
+}
+
+/* Sponsor Section (inherits styling, but with less text) */
+.sponsor {
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sponsor h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.sponsor p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.sponsor a {
+    color: #ff5a00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sponsor a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section (distinct styling) */
+.contact {
+    background-color: #000;
+    color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.contact p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.contact a {
+    color: #ff5a00;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* (Other existing CSS rules remain unchanged) */
