@@ -410,3 +410,28 @@ footer {
 }
 
 /* (Other existing CSS rules remain unchanged) */
+
+.info-box {
+    background-color: #f9f9f9;      /* Jemně šedé pozadí */
+    border-left: 4px solid #ff5a00; /* Barevná vertikální linka */
+    border-radius: 6px;            /* Zaoblené rohy */
+    padding: 1rem 1.5rem;          /* Vnitřní odsazení */
+    margin: 2rem 0;                /* Vnější odsazení (odstup od okolí) */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Lehké stínování */
+}
+
+.info-box p {
+    margin: 0;                     /* Zruší výchozí mezery kolem odstavce */
+    font-size: 1.1em;              /* Lehce větší písmo */
+    line-height: 1.5;              /* Příjemná čitelnost textu */
+}
+
+.info-box a {
+    color: #ff5a00;                /* Oranžová barva odkazů */
+    font-weight: bold;             /* Tučné písmo */
+    text-decoration: none;         /* Žádné podtržení */
+}
+
+.info-box a:hover {
+    text-decoration: underline;     /* Zvýraznění při najetí myší */
+}

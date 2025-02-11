@@ -98,23 +98,22 @@
     <h2>YouTube</h2>
     <div class="video-row">
         <div class="video-column">
-            <h3>nejnovější</h3>
+            <h3>Nejnovější</h3>
             <iframe
+                    id="latestVideoFrame"
                     width="300"
                     height="169"
-                    src="https://www.youtube.com/embed/VC6q6tj4oL8"
-                    title="YouTube video player"
                     frameborder="0"
                     allowfullscreen
             ></iframe>
         </div>
+
         <div class="video-column">
-            <h3>nejpopulárnější</h3>
+            <h3>Nejpopulárnější</h3>
             <iframe
+                    id="popularVideoFrame"
                     width="300"
                     height="169"
-                    src="https://www.youtube.com/embed/miPIjgbw5CY"
-                    title="YouTube video player"
                     frameborder="0"
                     allowfullscreen
             ></iframe>
@@ -131,18 +130,25 @@
             ></iframe>
         </div>
     </div>
-    <p>
-        Více videí najdete na mém <a href="https://www.youtube.com/@nattypony/videos" target="_blank">YouTube kanálu</a>.
-    </p>
+    <!-- HTML (vložte kamkoli do stránky) -->
+    <div class="info-box">
+        <p>
+            Pro více informací navštivte můj youtube kanál
+            <a href="https://www.youtube.com/@nattypony/videos" target="_blank">Natty Pony</a>,
+            nebo moje
+            <a href="https://herohero.co/nattypony4" target="_blank">Herohero</a>,
+            kde za 7€ najdete spoustu bonusového obsahu.
+        </p>
+    </div>
 </section>
 
 <!-- Sponsor and Contact Sections Wrapped in a Container -->
 <div class="info-container">
     <!-- Sekce "Sponzoring" -->
     <section id="sponsor" class="sponsor">
-        <h2>Sponzoring</h2>
+        <h2>Swaglift</h2>
         <p>
-            SWAGLIFT je značka fitness suplementů a oblečení. Použijte kód <strong>Pony</strong> pro slevu. Více na
+            SWAGLIFT je značka fitness suplementů a oblečení. Pro  <strong>5% slevu</strong> a podporu mého kanálu použijte kód <strong>Pony</strong>. Více najdete na
             <a href="https://swaglift.com" target="_blank">swaglift.com</a>.
         </p>
     </section>
@@ -163,6 +169,6 @@
 </footer>
 
 <!-- Vlastní JavaScript -->
-<script src="main.js"></script>
+<script type="module" src="main.js"></script>
 </body>
 </html>
